@@ -9,22 +9,23 @@
  */
 
 void expand_vars(info_t *info, char ***tokptr)
-
 {
-
 	char **new = NULL, **old, **tmp, **tokens;
 
 	for (tokens = *tokptr; **tokptr; ++(*tokptr))
 	{
+
 		old = new;
 		tmp = _expand_vars(info, tokptr);
 		new = arrjoin(old, tmp);
 		free_tokens(&old);
 		free_tokens(&tmp);
 		free(**tokptr);
+
 	}
 	free(tokens);
 	*tokptr = new;
+
 }
 
 /**
@@ -38,14 +39,11 @@ void expand_vars(info_t *info, char ***tokptr)
  */
 
 char **_expand_vars(info_t *info, char ***tokptr)
-
 {
-
 	char *var = NULL, *val = NULL, *tok = **tokptr;
-
 	size_t pos = 0, var_len, val_len;
-
 	quote_state_t state = QUOTE_NONE;
+
 	while (var_len = val_len = 1, tok[pos])
 	{
 		if (quote_state_len(tok + pos, state) == 0)
@@ -82,7 +80,9 @@ char **_expand_vars(info_t *info, char ***tokptr)
 				++pos;
 			continue;
 		}
+
 		if (tok[pos] != '$')
+
 		{
 			++pos;
 			continue;
@@ -112,6 +112,7 @@ char **_expand_vars(info_t *info, char ***tokptr)
 		{
 			val_len = _strlen(val);
 			**tokptr = malloc(sizeof(char) * (
+
 						pos + val_len + _strlen(tok + pos + var_len) + 1
 						));
 			_memcpy(**tokptr, tok, pos);

@@ -180,8 +180,8 @@ char *_getline(const int fd)
 				}
 				else
 				{
-					if (_getline_next(buf, &line, &size, eol + 1))
-						buf->next += eol + 1, buf->remaining -= eol + 1;
+				if (_getline_next(buf, &line, &size, eol + 1))
+					buf->next += eol + 1, buf->remaining -= eol + 1;
 					break;
 				}
 			}
