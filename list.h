@@ -4,11 +4,13 @@
 #include <stdlib.h>
 #include "string.h"
 #include "types.h"
+
 /**
  * struct list - singly linked list
  * @str: dynamically-allocated string
  * @next: pointer to the next node
  */
+
 struct list
 {
 	char *str;
