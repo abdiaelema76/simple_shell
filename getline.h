@@ -50,4 +50,5 @@ typedef buf_table_node_t *buf_table_t[GETLINE_TABLE_SIZE];
 char *_getline(const int fd);
 
 
+
 #endif /* _GETLINE_H_ */
