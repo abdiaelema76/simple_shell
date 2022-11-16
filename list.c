@@ -136,4 +136,5 @@ void free_list(list_t **headptr)
 	free((*headptr)->str);
 	free(*headptr);
 	*headptr = NULL;
+
 }
