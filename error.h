@@ -9,4 +9,5 @@
 void perrorl(const char *msg, ...);
 void perrorl_default(const char *arg0, size_t lineno, const char *msg, ...);
 
+
 #endif /* _ERROR_H_ */
