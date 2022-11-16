@@ -6,6 +6,7 @@
 #include "string.h"
 #include "types.h"
 
+
 typedef dict_t env_t;
 
 env_t *env_to_dict(char **env);
