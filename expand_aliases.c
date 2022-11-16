@@ -68,5 +68,6 @@ char *expand_alias(alias_t *aliases, char ***tokptr)
 		}
 		aliases = aliases->next;
 	}
+
 	return (NULL);
 }
