@@ -32,13 +32,16 @@
 #define USE_STRTOK 0
 #define HIST_FILE	".simple_shell_history"
 #define HIST_MAX	4096
+
 extern char **environ;
+
 /**
  * struct liststr - singly linked list
  * @num: the number field
  * @str: a string
  * @next: points to the next node
  */
+
 typedef struct liststr
 {
 	int num;
@@ -49,6 +52,7 @@ typedef struct liststr
 
 }
 list_t;
+
 /**
  *struct passinfo - contains pseudo-arguements to pass into a function,
  *		allowing uniform prototype for function pointer struct
@@ -71,6 +75,7 @@ list_t;
  *@readfd: the fd from which to read line input
  *@histcount: the history line number count
  */
+
 typedef struct passinfo
 {
 	char *arg;
@@ -111,14 +116,17 @@ typedef struct passinfo
 
 }
 info_t;
+
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
 	0, 0, 0}
+
 /**
  *struct builtin - contains a builtin string and related function
  *@type: the builtin command flag
  *@func: the function
  */
+
 typedef struct builtin
 {
 	char *type;
