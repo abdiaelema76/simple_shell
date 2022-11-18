@@ -35,11 +35,11 @@ ssize_t _strnchr(const char *str, char chr, size_t n)
  *
  *      * Description: This function copies at most n bytes. If str is longer
  *
- *       * than n, only n bytes are copied, and a terminating null byte is added.
+ *     * than n, only n bytes are copied, and a terminating null byte is added.
  *
  *         * Return: If str is NULL or if memory allocation fails, return NULL.
  *
- *          * Otherwise a return a pointer to the dynamically-allocated duplicate.
+ *       * Otherwise a return a pointer to the dynamically-allocated duplicate.
  *
  */
 
@@ -126,7 +126,7 @@ int _strncmp(const char *s1, const char *s2, size_t n)
  *
  *     * @n: the max number of bytes to copy
  *
- *       * Description: This function copies at most n bytes from src to dest. A
+ *       * Description: This function copies at most n bytes from src to dest.
  *
  *        * null byte will NOT be written if not found in the first n bytes
  *
