@@ -5,7 +5,7 @@
  *
  *   * @info: shell information
  *
- *     * Description: This function expands aliases, variables, and word splitting
+ *  * Description: This function expands aliases, variables, and word splitting
  *
  *       * Return: the final number of tokens
  */

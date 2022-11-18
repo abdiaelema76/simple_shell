@@ -9,7 +9,7 @@
  *
  *     * @n: size of the search area
  *
- *      * Return: If chr does not occur in the first n elements of src, return -1.
+ *  * Return: If chr does not occur in the first n elements of src, return -1.
  *
  *       * Otherwise, return the index of the first occurence of chr.
  */
@@ -40,7 +40,7 @@ ssize_t _memchr(const void *src, unsigned char chr, size_t n)
  *
  *     * @n: the number of bytes to copy
  *
- *       * Description: This function copies n bytes from the memory area at src
+ *       * Description:function copies n bytes from the memory area at src
  *
  *        * to the memory area at dest. These memory areas must not overlap.
  *

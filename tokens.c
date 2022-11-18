@@ -5,9 +5,9 @@
  *
  *   * @str: the string to tokenize
  *
- *  * Return: If malloc fails or if str is 0 or contains no tokens, return NULL.
+ ** Return: If malloc fails or if str is 0 or contains no tokens, return NULL.
  *
- ** Otherwise, return an array containing the tokens in str, terminated by NULL.
+ ** Otherwise, return an array containing the tokens, terminated by NULL.
  */
 
 char **tokenize(const char *str)
@@ -83,9 +83,9 @@ size_t count_tokens(const char *str)
  *
  *   * @str: the string to tokenize
  *
- *    * Return: If malloc fails or if str is 0 or contains no tokens, return NULL.
+ *  * Return: If malloc fails or if str 0 or contains no tokens, return NULL.
  *
- *     * Otherwise, return an array containing the tokens in str, terminated by NULL.
+ ** Otherwise, return array containing the tokens in str, terminated by NULL.
  *
  */
 
