@@ -89,9 +89,7 @@ typedef int (*builtin_fp)(info_t *);
 struct builtin
 {
 	const char *name;
-
 	builtin_fp f;
-
 	const char *help;
 	const char *desc;
 };
